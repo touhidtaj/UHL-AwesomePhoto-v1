@@ -1,0 +1,418 @@
+/*
+ *	Prepared by Touhid Taj : +88 01787188885
+ */
+#container1 { 
+	display: table;
+	zoom: 1; 
+	position: relative;
+	width: 100%;
+	max-width: 300px;
+	max-height:250px;
+	margin:0px auto 0px;
+	z-index:90;
+	text-align:left; /* reset align=center */
+	font-size: 10px;
+	text-shadow: none; /* fix some user styles */
+
+	/* reset box-sizing (to boostrap friendly) */
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box; 
+}
+* html #container1{ width:300px }
+#container1 .taj_images ul{
+	position:relative;
+	width: 10000%; 
+	height:100%;
+	left:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-spacing:0;
+	overflow: visible;
+	/*table-layout:fixed;*/
+}
+#container1 .taj_images ul li{
+	position: relative;
+	width:1%;
+	height:100%;
+	line-height:0; /*opera*/
+	overflow: hidden;
+	float:left;
+	/*font-size:0;*/
+	padding:0 0 0 0 !important;
+	margin:0 0 0 0 !important;
+}
+
+#container1 .taj_images{
+	position: relative;
+	left:0;
+	top:0;
+	height:100%;
+	max-height:250px;
+	max-width: 300px;
+	vertical-align: top;
+	border:none;
+	overflow: hidden;
+}
+#container1 .taj_images ul a{
+	width:100%;
+	height:100%;
+	max-height:250px;
+	display:block;
+	color:transparent;
+}
+#container1 img{
+	max-width: none !important;
+}
+#container1 .taj_images .taj_list img,
+#container1 .taj_images > div > img{
+	width:100%;
+	border:none 0;
+	max-width: none;
+	padding:0;
+	margin:0;
+}
+#container1 .taj_images > div > img {
+	max-height:250px;
+}
+
+#container1 .taj_images iframe {
+	position: absolute;
+	z-index: -1;
+}
+
+#container1 .taj-title > div {
+	display: inline-block !important;
+}
+
+#container1 a{ 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+}
+
+#container1  .taj_bullets { 
+	float: left;
+	position:absolute;
+	z-index:70;
+}
+#container1  .taj_bullets div{
+	position:relative;
+	float:left;
+	font-size: 0px;
+}
+/* compatibility with Joomla styles */
+#container1  .taj_bullets a {
+	line-height: 0;
+}
+
+#container1  .taj_script{
+	display:none;
+}
+#container1 sound, 
+#container1 object{
+	position:absolute;
+}
+
+/* prevent some of users reset styles */
+#container1 .taj_effect {
+	position: static;
+	width: 100%;
+	height: 100%;
+}
+
+#container1 .taj_photoItem {
+	border: 2em solid #fff;
+	margin-left: -2em;
+	margin-top: -2em;
+}
+#container1 .taj_cube_side {
+	background: #A6A5A9;
+}
+
+
+#container1.taj_gestures {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABwSURBVEjH7ZJBEsAgCAMT/v/n9NCOSqe2oD2yNx1JggB4BCEFWyFASP2KMQE7ywWhe/tTRGCGogLk02tFctiW/SUgaMyQG4PdPzDn31rQbMb8FiAXgvsEJNax1yVlVGAjA93apP3HFhZTGIqiKH7iADB6HxPlHdNVAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTA3VDEzOjQ5OjEwKzAyOjAwm7WiFAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0wN1QxMzo0OToxMCswMjowMOroGqgAAAAASUVORK5CYII="), move;
+}
+#container1.taj_gestures.taj_grabbing {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABaSURBVEjH7ZMxCkAhDEOT8u9/5TpJ+xWkFse8IYutJgEB8RCHL1qCc90BEFnT6QH7mwgFHBUf8wJyS1TDLuc3vmighx37LZdIth3E5hKj9n6O0HRh+oJCiFcMxRUUDxR1CTMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDctMDdUMTM6NDk6MzgrMDI6MDDqf+sOAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA3LTA3VDEzOjQ5OjM4KzAyOjAwmyJTsgAAAABJRU5ErkJggg=="), move;
+}
+
+/* hide controls when video start play */
+#container1.taj_video_playing .taj_bullets,
+#container1.taj_video_playing .taj_fullscreen,
+#container1.taj_video_playing .taj_next,
+#container1.taj_video_playing .taj_prev {
+	display: none;
+}
+
+
+/* youtube/vimeo buttons */
+#container1 .taj_video_btn {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 55;
+}
+#container1 .taj_video_btn.taj_youtube,
+#container1 .taj_video_btn.taj_vimeo {
+	display: block;
+}
+#container1 .taj_video_btn div {
+	position: absolute;
+	/* background-image: url(./playvideo.png); */
+	background-size: 200%;
+	top: 50%;
+	left: 50%;
+	width: 7em;
+	height: 5em;
+	margin-left: -3.5em;
+	margin-top: -2.5em;
+}
+#container1 .taj_video_btn.taj_youtube div {
+	background-position: 0 0;
+}
+#container1 .taj_video_btn.taj_youtube:hover div {
+	background-position: 100% 0;
+}
+#container1 .taj_video_btn.taj_vimeo div {
+	background-position: 0 100%;
+}
+#container1 .taj_video_btn.taj_vimeo:hover div {
+	background-position: 100% 100%;
+}
+
+#container1 .taj_playpause.taj_hide {
+	display: none !important;
+}
+/* bullets */
+#container1  .taj_bullets { 
+	padding: 0px; 
+}
+#container1 .taj_bullets a { 
+	position:relative;
+	display: inline-block;
+	width: 0;
+	margin: 3px 5px;
+	padding: 8px;	
+
+	-webkit-perspective: 80px;
+	perspective: 80px;
+} 
+#container1 .taj_bullets a > span {
+	position:absolute;
+	display: block;
+	top:0;
+	right: 0;
+	height:100%;
+	width:100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transition: -webkit-transform 0.5s ease;
+  	transition: -webkit-transform 0.5s ease, transform 0.5s ease;
+}
+
+#container1 .taj_bullets a > span:before,
+#container1 .taj_bullets a > span:after {
+	content: '';
+	display: block;
+	height:100%;
+	background: #FFF;
+
+  	-webkit-transform: rotateX(-90deg) translateZ(-8px) translateY(8px);
+  	transform: rotateX(-90deg) translateZ(-8px) translateY(8px);
+}
+#container1 .taj_bullets a > span:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  	background: #1A2223;
+  	-webkit-transform: rotateX(0deg);
+  	transform: rotateX(0deg);
+}
+
+#container1 .taj_bullets a.taj_overbull > span,
+#container1 .taj_bullets a.taj_selbull > span {
+    -webkit-transform: rotateX(-90deg) translateZ(8px) translateY(8px);
+    transform: rotateX(-90deg) translateZ(8px) translateY(8px);
+}
+
+
+
+
+/* play/pause, arrows */
+#container1 a.taj_next,
+#container1 a.taj_prev,
+#container1 .taj_playpause {
+	position:absolute;
+	font: 2em "ws-ctrl-convex";
+	width: 2.5em;
+	height: 2.5em;
+	top:50%;
+	
+	margin-top: -1.25em;
+	color: #ffffff;
+	z-index: 100;
+
+	-webkit-perspective: 20em;
+	perspective: 20em;
+}
+#container1 a.taj_next {
+	right: 0;
+}
+#container1 a.taj_prev {
+	left: 0;
+}
+#container1 .taj_playpause {
+	left:50%;
+	margin-left:-1.25em;
+}
+
+#container1 a.taj_next > span,
+#container1 a.taj_prev > span,
+#container1 .taj_playpause > span,
+#container1 .taj_bullets a > span {
+	display: block;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transition: -webkit-transform 0.5s ease;
+  	transition: -webkit-transform 0.5s ease, transform 0.5s ease;
+}
+
+
+#container1 a.taj_next > span:before,
+#container1 a.taj_prev > span:before,
+#container1 .taj_playpause > span:before,
+#container1 a.taj_next > span:after,
+#container1 a.taj_prev > span:after,
+#container1 .taj_playpause > span:after {
+	display: block;
+	text-align: center;
+	line-height: 2.5em;
+	height:100%;
+	background: #ffffff;
+	color: #1A2223;
+
+  	-webkit-transform: rotateX(-90deg) translateZ(-1.25em) translateY(1.25em);
+  	transform: rotateX(-90deg) translateZ(-1.25em) translateY(1.25em);
+}
+#container1 .taj_play > span:before,
+#container1 .taj_play > span:after{
+	content:"\e800";
+}
+#container1 .taj_pause > span:before,
+#container1 .taj_pause > span:after{
+	content:"\e801";
+}
+#container1 a.taj_next > span:before,
+#container1 a.taj_next > span:after {
+	content:'\e803';
+}
+#container1 a.taj_prev > span:before,
+#container1 a.taj_prev > span:after {
+	content:'\e802';
+}
+
+#container1 a.taj_next > span:after,
+#container1 a.taj_prev > span:after,
+#container1 .taj_playpause > span:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  	-webkit-transform: rotateX(0deg);
+  	transform: rotateX(0deg);
+  	background: #1A2223;
+	color: #ffffff;
+}
+
+#container1 a.taj_next:hover > span,
+#container1 a.taj_prev:hover > span,
+#container1 .taj_playpause:hover > span {
+    -webkit-transform: rotateX(-90deg) translateZ(1.25em) translateY(1.25em);
+    transform: rotateX(-90deg) translateZ(1.25em) translateY(1.25em);
+}/* bottom center */
+#container1  .taj_bullets {
+	bottom:1.5em;
+	left:50%;
+}
+#container1  .taj_bullets div{
+	left:-50%;
+}#container1 .taj-title{
+	font: 0.8em 'Montserrat', serif;
+	position: absolute;
+	left: 2em;
+	margin-right:10em;
+	z-index: 50;
+
+	color:#fff;
+	padding: 1em;
+	bottom: 30px;
+	top: auto;
+	opacity: 1;
+}
+#container1 .taj-title div,#container1 .taj-title span{
+	display:inline-block;
+	padding: 0.1em 0.6em;
+	background-color: #1A2223;
+	color: #FFF;
+}
+#container1 .taj-title div{
+	display:block;
+	margin-top:0.5em;
+	font-size: 1.3em;
+}
+#container1 .taj-title span{
+	text-transform: uppercase;	
+	font-size: 2em;
+}#container1 a.taj_next,
+#container1 a.taj_prev,
+#container1 .taj_playpause {
+	display:none;
+}
+
+* html #container1 a.taj_next,* html #container1 a.taj_prev{display:block}
+
+#container1:hover a.taj_next,
+#container1:hover a.taj_prev,
+#container1:hover .taj_playpause {
+	display:block
+}#container1 .taj_images > ul{
+	animation: wsBasic 20s infinite;
+	-moz-animation: wsBasic 20s infinite;
+	-webkit-animation: wsBasic 20s infinite;
+}
+@keyframes wsBasic{0%{left:-0%} 10%{left:-0%} 20%{left:-100%} 30%{left:-100%} 40%{left:-200%} 50%{left:-200%} 60%{left:-300%} 70%{left:-300%} 80%{left:-400%} 90%{left:-400%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 10%{left:-0%} 20%{left:-100%} 30%{left:-100%} 40%{left:-200%} 50%{left:-200%} 60%{left:-300%} 70%{left:-300%} 80%{left:-400%} 90%{left:-400%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 10%{left:-0%} 20%{left:-100%} 30%{left:-100%} 40%{left:-200%} 50%{left:-200%} 60%{left:-300%} 70%{left:-300%} 80%{left:-400%} 90%{left:-400%} }
+
+#container1 .taj_bulframe div div{
+	height: auto;
+}
+
+@media all and (max-width:760px) {
+	#container1 .taj_fullscreen {
+		display: block;
+	}
+}
+@media all and (max-width:400px){
+	#container1 .taj_controls,
+	#container1 .taj_bullets,
+	#container1 .taj_thumbs{
+		display: none
+	}
+}
